@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;   /* ✅ APPLY HERE */
+  background: linear-gradient(135deg, #f9d6e2, #ffdae5);
+}
+
+
+/* MAIN CONTAINER */
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+
+/* TITLE (AI Code Documentation Generator) */
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 950;  
+  font-size: 60px;          
+  font-weight: 950;         
+  color: #1c2c5b;
+  margin-bottom: 15px;
+  margin-top: none;
+  justify-content: center;
+  letter-spacing: 1px;      
+  text-transform: capitalize;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* SECTIONS */
+.section {
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+/* INPUT URL BOX */
+.input {
+  width: 600px;        
+  justify-content: center;      
+  padding: 17px 15px;    
+  margin-right: 10px;    
+  font-size: 17px;          
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+}
+
+/* BUTTON BASE */
+.btn {
+  font-weight: 500;
+  padding: 19px 15px;  
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 130px;       
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* COLORS */
+.green   { background: linear-gradient(135deg, #7c94ad, #1079e9);color: white;padding: 19px 60px;}
+.red     { background: linear-gradient(135deg, #ad6a71, #a71d2a);color: white;padding: 19px 25px;}
+.purple  { background: linear-gradient(135deg, #8d78b5, #4834a3);color: white;padding: 19px 60px;}
+.orange  { background: linear-gradient(135deg, #cc9263, #c45d00);color: white;padding: 19px 74px;}
+
+/* ACTIONS */
+.actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* OUTPUT BOX */
+
+.box {
+  margin: 30px auto;
+  max-width: 2000px;
+  padding: 25px;
+  border-radius: 19px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  line-height: 1.7;
+  transition: 0.3s;
+}
+
+
+.box h3 {
+  text-align: center;        
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* SEARCH */
+.search {
+  width: 95%;
+  padding: 10px 16px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+}
+
+
+.search:focus {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.grid li {
+  padding: 4px 0;
+  font-size: 14px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  list-style: none;      
+  padding-left: 0;       
+}
+
+/*FORCE FONT FOR ALL TEXT*/
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* DOC */
+.doc {
+  font-weight: 400;
+  white-space: pre-wrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.repo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.blue {
+  background: linear-gradient(135deg, #a0a8ec, #031343); 
+  padding: 18px 30px;   
+  font-size: 16px;        
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow:#1344d8;
+  cursor: pointer;
+}
+
+.blue:hover {
+  transform: scale(1.05);
+  box-shadow: #1d3375;
+}
+
+/* Upload main row */
+.upload-section {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Each upload block */
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: rigth;
+  gap: 5px;
+  padding: 8px 17px;      
+  width: 150px;            
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  transition: 0.2s;
+}
+
+.upload-box:hover {
+  transform: translateY(-4px);
+}
+
+.dark {
+  background: linear-gradient(135deg, #46587c, #5591ad);  
+  padding: 11px 10px;      
+  font-size: 12px;
+  border-radius: 15px;
+  color: white;
+}
+
+/* For PDF and WORD */
+.download-section {
+  margin-top: 25px;        /* ✅ control top spacing */
+  margin-bottom: 15px;     /* ✅ bottom space */
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.download-pdf {
+  background: linear-gradient(135deg, #ce95b3, #c660a2);
+  padding: 17px 70px;
+  font-size: medium;
+  border-radius: 20px;
+}
+
+.download-word {
+  background: linear-gradient(135deg, #8cb4bb, #4d8aa7);
+  padding: 17px 70px;
+  font-size: medium;
+  border-radius: 20px;
+}
+
+.download-section button:hover {
+  transform: scale(1.05);
+}
